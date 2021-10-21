@@ -1,6 +1,4 @@
 import React, {useCallback, useState} from "react";
-import Header from '../components/Home/Header/Header';
-import Footer from '../components/Home/Footer/Footer';
 import ScrollToTop from "../components/Utils/ScrollToTop/ScrollToTop";
 import Supporters from "../components/Home/Supporters/Supporters";
 import Intro from "../components/Home/Intro/Intro";
@@ -16,7 +14,6 @@ function Home() {
 
   return (
       <div className={theme.className}>
-        <Header />
         <Intro />
         <About />
         <Facts />
@@ -24,7 +21,6 @@ function Home() {
         <Explore />
         <Supporters />
         <AppDownload />
-        <Footer />
         <ScrollToTop
             icon="bi bi-caret-up-fill"
             backgroundColor = "#EB743B"
