@@ -15,6 +15,7 @@ import '../styles/Supporters.css';
 import '../styles/Projects.css';
 import '../styles/Footer.css';
 import '../styles/FAQs.css';
+import { ThemeProvider } from '../components/Utils/ThemeContext/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -51,7 +52,9 @@ function MyApp({ Component, pageProps }) {
 
                 <title>MusicBrainz - The Open Music Encyclopedia</title>
             </Head>
-            <Component {...pageProps} />
+            <ThemeProvider>
+              <Component {...pageProps} />
+            </ThemeProvider>
         </>
     );
 }

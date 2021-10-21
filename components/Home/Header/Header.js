@@ -1,8 +1,14 @@
 import React from "react";
 import SearchOverlay from "./SearchOverlay";
+import { useTheme, themes } from '../../Utils/ThemeContext/ThemeContext';
 
 const Header = () => {
   let typeCurrent = "Artist";
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === themes.default ? themes.purple : themes.default)
+  }
 
   return (
       <>
@@ -51,6 +57,7 @@ const Header = () => {
                   <a className="dropdown-item ">Profile</a>
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
+                  <a className="dropdown-item " onClick={toggleTheme}>Toggle Theme</a>
                   <a className="dropdown-item ">Logout</a>
                 </div>
               </li>

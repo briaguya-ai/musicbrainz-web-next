@@ -48,6 +48,28 @@
   }
 }
 
+.theme-purple {
+    --box-color: #243133;
+    --main-bg: #2f1642;
+    --color: white;
+    --background-color: black;
+    --search-bg: #1a1a1a;
+    --primary-color: purple;
+    --secondary-color: orange;
+    --title-color: #f3f3f3;
+    --shadow: rgba(1, 21, 92, 0.18);
+    --gray-light: #243133;
+    --intro-bg-first: #262626;
+    --intro-bg-second: #1a1a1a;
+    --selected-bg: #15DED8;
+    --footer-bg: #243133;
+    --footer-sec-color: #90A4AE;
+    --supporters-card-bg: #808080;
+    --filter: none;
+    --btn-dark: #243133;
+    --hint-color: #f3f3f3;
+    --projects-bg: #243133;
+}
 
 body {
   font-family: 'Poppins', sans-serif;

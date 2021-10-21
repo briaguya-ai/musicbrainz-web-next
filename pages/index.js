@@ -9,13 +9,13 @@ import About from "../components/Home/About/About";
 import Facts from "../components/Home/Facts/Facts";
 import Explore from "../components/Home/Explore/Explore";
 import Projects from "../components/Home/Projects/Projects";
+import { useTheme } from '../components/Utils/ThemeContext/ThemeContext';
 
 function Home() {
-  let customTheme = 'theme';
-  // todo: logic for custom theming beyond browser dark/light mode here
+  const { theme } = useTheme();
 
   return (
-      <div className={customTheme}>
+      <div className={theme.className}>
         <Header />
         <Intro />
         <About />
