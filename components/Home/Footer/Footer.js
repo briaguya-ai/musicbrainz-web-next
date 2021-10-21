@@ -1,8 +1,11 @@
 import React from "react";
+import { useTheme } from '../../Utils/ThemeContext/ThemeContext';
 
 const Footer = () => {
+  const { theme } = useTheme();
+
   return (
-      <section className="section-footer">
+      <section className={`section-footer ${theme.className}`}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">
